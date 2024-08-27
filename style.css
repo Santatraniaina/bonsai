@@ -260,9 +260,6 @@ main {
     margin-right: 10px;
 }
 
-.feature > span {
-}
-
 .pricing-item > .button {
     /* width: 100%; */
     display: block;
@@ -306,7 +303,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
+    padding: 20px 40px;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 0 60px 0 rgba(2, 4, 69, .05);
@@ -324,6 +321,20 @@ main {
     font-weight: 300;
     font-size: 1rem;
 }
+
+.workflow-description > .learn-more {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--green);
+}
+
+/* .workflow-description > .learn-more > img {
+    animation: all 1s ease-in;
+}   
+
+.workflow-description > .learn-more > img:hover {
+    transform: translateX(100px);
+} */
 
 .workflow-price {
     width: 20%;
