@@ -33,6 +33,7 @@ body {
     color: var(--gray);
     max-width: 1120px;
     margin: auto;
+    overflow-x: hidden;
 }
 
 ul {
@@ -130,8 +131,21 @@ header {
 
 
 main {
+    position: relative;
     padding-top: 110px;
     padding-bottom: 40px;
+}
+
+.blue-shape {
+    width: 90%;
+    height: 120%;
+    border-radius: 6.6vw;
+    background-color: #f2faff;
+    transform: rotate(-23deg);
+    z-index: -1;
+    position: absolute;
+    top: -88%;
+    right: -23%;
 }
 
 
