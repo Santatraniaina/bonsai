@@ -378,3 +378,37 @@ main {
 .cta > p > span.green {
     color: var(--green);
 }
+
+
+
+
+footer {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer > div > h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.15em;
+    margin-bottom: 50px;
+}
+
+.footer-list {
+    margin-bottom: 25px;
+}
+
+.footer-list > li {
+    margin-bottom: 1px;
+    color: var(--gray);
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: .11px;
+    text-decoration: none;
+}
+
+.footer-list > li > img {
+    margin-bottom: 2px;
+}
