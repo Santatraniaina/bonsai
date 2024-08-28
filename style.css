@@ -354,3 +354,27 @@ main {
     line-height: 133%;
     font-weight: 400;
 }
+
+
+
+
+.cta {
+    margin: 120px auto 0px;
+    padding: 4rem 3rem;
+    background: var(--green);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    border-radius: 8px;
+    background-color: #f2faff;
+}
+
+.cta > p {
+    font-size: 2.75rem;
+    line-height: 130%;
+}
+
+.cta > p > span.green {
+    color: var(--green);
+}
