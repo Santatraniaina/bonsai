@@ -13,52 +13,41 @@
     <title>Bonsai</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <a href="#" aria-label="home">
-            <img
-                src="/assets/img/bonsai-logo.svg"
-                alt="Bonsai Logo"
-                width="150px"
-            />
+            <img src="/assets/img/bonsai-logo.svg" alt="Bonsai Logo" width="150px"/>
         </a>
         <nav class="navbar">
             <ul>
-                <li>
-                    <span class="dropdown-text">
-                        Product
-                    </span>
-                    <img
-                        src="/assets/img/path.svg"
-                        alt="Dropdown arrow"
-                        class="dropdown-arrow"
-                    />
+                <li class="navbar-list dropdown">
+                    Product
                 </li>
-                <li>
-                    <span class="dropdown-text">
-                        Templates
-                    </span>
-                    <img
-                        src="/assets/img/path.svg"
-                        alt="Dropdown arrow"
-                        class="dropdown-arrow"
-                    />
+                <li class="navbar-list dropdown">
+                    Templates
                 </li>
-                <li>Pricing</li>
-                <li>Reviews</li>
+                <li class="navbar-list">
+                    Pricing
+                </li>
+                <li class="navbar-list">
+                    Reviews
+                </li>
             </ul>
             <div class="login-signup">
-                <a href="#" class="button button-secondary ms-10">
+                <a href="#" class="button button-secondary">
                     LOG IN
                 </a>
-                <a href="#" class="button button-primary ms-10">
+                <a href="#" class="button button-primary">
                     START FREE
                 </a>
             </div>
+            <label for="menu-toggle" class="hamburger-menu">
+                <input type="checkbox" id="menu-toggle">
+            </label>
         </nav>
     </header>
 
     <main>
-        <div class="blue-shape"></div>
+        <!-- <div class="blue-shape"></div> -->
         <section class="pricing" aria-label="Pricing">
             <div class="pricing-head">
                 <h1 class="amerigo">Plans & Pricing</h1>

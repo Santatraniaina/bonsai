@@ -46,48 +46,44 @@ a {
 }
 
 
-
-
-header {
+/* HEADER */
+.header {
     height: 80px;
     /* background: lightblue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* TODO : Fix padding */
+    /* padding: 0 2.5rem; */
 }
 
 .navbar {
-    width: 75%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-end;
-    font-size: 17px;
+    gap: 5rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
 .navbar > ul {
     display: flex;
     align-items: center;
-    gap: 40px;
-    margin-right: 5%;
+    gap: 3rem;
 }
 
-.navbar > ul > li {
+.navbar-list {
     cursor: pointer;
 }
 
-.dropdown-text {
-    padding: 16px 8px 16px 0px;
-    color: #4c4d5f;
+.dropdown::after{
+    content: url('/assets/img/path.svg');
+    padding-left: 0.5rem;
 }
 
-.dropdown-arrow {
-    /* TODO: Research */
-    background-position: 50% 50%;
-}
-
-.ms-10 {
-    margin-left: 10px;
+.login-signup {
+    display: flex;
+    gap: 1.25rem;
 }
 
 .button {
@@ -104,6 +100,7 @@ header {
     /* TODO: Research */
     line-height: 16px;
     letter-spacing: .6px;
+    display: block;
 }
 
 .button-primary {
@@ -126,9 +123,32 @@ header {
     color: var(--white);
 }
 
+/* HAMBURGER MENU */
+.hamburger-menu{
+    width: 35px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.hamburger-menu::before,
+.hamburger-menu > input,
+.hamburger-menu::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: var(--gray);
+}
+
+.hamburger-menu > input{
+    appearance: none;
+    margin: 0;
+}
 
 
-
+/* MAIN */
 main {
     position: relative;
     padding-top: 110px;
@@ -478,3 +498,29 @@ footer > div > h3 {
 .footer-list > li > img {
     margin-bottom: 2px;
 }
+
+
+
+/* BREAKPOINTS */
+/* Laptop */
+@media (max-width: 1024px) {
+    .header {
+        padding: 0 2.5rem;
+    }
+
+    .navbar > ul,
+    .login-signup {
+        display: none;
+    }
+
+    .hamburger-menu{
+        display: flex;
+    }
+}
+   
+/* Tablet */
+@media (max-width: 768px) {
+    
+
+}
+    
