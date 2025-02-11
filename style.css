@@ -3,6 +3,7 @@
     --gray:#4c4d5f;
     --white:#fff;
     --yellow:#f8db62;
+    --width: 1120px;
 }
 
 /* @font-face {
@@ -30,9 +31,9 @@ body {
     color: #4c525a;
     font-size: 14px;
     color: var(--gray);
-    max-width: 1120px;
-    margin: auto;
-    overflow-x: hidden;
+    /* max-width: var(--width); */
+    /* margin: auto; */
+    /* overflow-x: hidden; */
 }
 
 ul {
@@ -43,18 +44,28 @@ ul {
 
 a {
     text-decoration: none;
-}
+}   
 
+.unselected{
+    opacity: .65;
+}
 
 /* HEADER */
 .header {
-    height: 80px;
-    /* background: lightblue; */
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1.25rem;
+}
+
+.header-container{
+    max-width: var(--width);
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* TODO : Fix padding */
-    /* padding: 0 2.5rem; */
+    
 }
 
 .navbar {
@@ -149,10 +160,15 @@ a {
 
 
 /* MAIN */
-main {
-    position: relative;
-    padding-top: 110px;
-    padding-bottom: 40px;
+.main{
+    width: 100vw;
+}
+
+.main-container {
+    max-width: var(--width);
+    margin: 0 auto;
+    padding-top: 7rem;
+    padding-bottom: 2.5rem;
 }
 
 .blue-shape {
@@ -168,13 +184,11 @@ main {
 }
 
 
-
-
 .pricing-head {
-    /* background-color: aquamarine; */
     display: flex;
     justify-content: center;
     gap: 100px;
+    margin-top: 2.5rem;
 }
 
 .amerigo {
@@ -505,7 +519,7 @@ footer > div > h3 {
 /* Laptop */
 @media (max-width: 1024px) {
     .header {
-        padding: 0 2.5rem;
+        padding: 1.25rem 2.5rem;
     }
 
     .navbar > ul,
@@ -516,11 +530,30 @@ footer > div > h3 {
     .hamburger-menu{
         display: flex;
     }
+
+    .pricing-head {
+        margin-top: 0;
+    }
+    
 }
    
 /* Tablet */
 @media (max-width: 768px) {
-    
+    .main-container {
+        padding-top: 3.5rem;
+        padding-bottom: 1.25rem;
+    }
+
+    .pricing-head {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .pricing-head > h1 {
+        text-align: center;
+        font-size: 1.75rem;
+    }
 
 }
     
