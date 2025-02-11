@@ -31,15 +31,15 @@ body {
     color: #4c525a;
     font-size: 14px;
     color: var(--gray);
-    /* max-width: var(--width); */
-    /* margin: auto; */
-    /* overflow-x: hidden; */
 }
 
 ul {
-    list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+li{
+    list-style: none;
 }
 
 a {
@@ -239,17 +239,17 @@ a {
 }
 
 
-
+/* PRICING CARD */
 .pricing-container {
-    margin-top: 40px;
+    margin-top: 2.5rem;
     display: flex;
     justify-content: space-between;
+    gap: 1.5rem;
 }
 
 .pricing-item {
     overflow: hidden;
     position: relative;
-    width: 25%;
     border-radius: 5px;
     padding: 6% 4%;
     border: .3px solid rgba(2, 4, 69, .15);
@@ -292,14 +292,14 @@ a {
 }
 
 .feature-list {
-    padding: 40px 0px;
+    padding: 2.5rem 0;
 }
 
 .feature {
-    margin-bottom: 18px;
-    font-size: 16px;
-    line-height: 23px;
-    display: flex;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    list-style: url('./assets/img/green-tick.svg');
+    
 }
 
 .feature > img {
@@ -316,7 +316,8 @@ a {
     margin-top: auto;
 }
 
-.popular-tag {
+.popular-tag::before {
+    content: attr(data-label);
     position: absolute;
     width: 120%;
     left: auto;
@@ -327,7 +328,7 @@ a {
     background: var(--green);
     color: var(--white);
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 11px 0px;
 }
 
@@ -531,8 +532,17 @@ footer > div > h3 {
         display: flex;
     }
 
+    .main-container {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
     .pricing-head {
         margin-top: 0;
+    }
+
+    .pricing-container {
+        flex-direction: column;
     }
     
 }
