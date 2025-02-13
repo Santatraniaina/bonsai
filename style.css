@@ -190,10 +190,17 @@ a {
 
 .amerigo {
     font-family: 'Amerigo-bt roman opt', sans-serif;
-    font-size: 2.5rem;
     line-height: 120%;
     font-weight: 400;
     margin: 0;
+}
+
+h1.amerigo {
+    font-size: 2.5rem;
+}
+
+h2.amerigo {
+    font-size: 2rem;
 }
 
 .pricing-options {
@@ -404,10 +411,18 @@ a {
     padding: 36px;
 }
 
+.workflow-price > .free,
 .workflow-price > .amount {
-    font-size: 2rem;
     line-height: 140%;
     font-weight: 700;
+}
+
+.workflow-price > .free {
+    font-size: 2rem;
+}
+
+.workflow-price > .amount {
+    font-size: 2.75rem;
 }
 
 .workflow-price > .period {
@@ -586,5 +601,39 @@ footer > div > h3 {
         font-size: 1.75rem;
     }
 
+    h2.amerigo {
+        font-size: 1.5rem;
+    }
+
+    .workflow-item {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .workflow-price {
+        padding: 1rem 0;
+    }
+
+    .workflow-price > .free {
+        font-size: 1.5rem;
+    }
+    .workflow-price > .amount {
+        font-size: 2.5rem;
+    }
+
+    .workflow-description > h2,
+    .workflow-description > p {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }   
+
+    .workflow-description > p {
+        font-weight: 300;
+    }
+
+    /* TODO : Margin top for learn more */
+    .workflow-description > a.learn-more{
+        margin-top: .5rem;
+    }
 }
     
