@@ -643,5 +643,10 @@ footer > div > h3 {
         text-align: center;
         gap: 1rem;
     }
+
+    .faq > .faq-header {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
 }
     
