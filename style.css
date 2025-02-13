@@ -112,6 +112,7 @@ a {
     line-height: 16px;
     letter-spacing: .6px;
     display: block;
+    text-wrap: nowrap;
 }
 
 .button-primary {
@@ -634,6 +635,13 @@ footer > div > h3 {
     /* TODO : Margin top for learn more */
     .workflow-description > a.learn-more{
         margin-top: .5rem;
+    }
+
+    .cta {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
     }
 }
     
