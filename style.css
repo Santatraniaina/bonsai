@@ -31,6 +31,7 @@ body {
     color: #4c525a;
     font-size: 14px;
     color: var(--gray);
+    position: relative;
 }
 
 ul {
@@ -44,7 +45,19 @@ li{
 
 a {
     text-decoration: none;
-}   
+}
+
+.blue-bg {
+    width: 120%;
+    height: 90%;
+    border-radius: 6.6vw;
+    background-color: #f2faff;
+    transform: rotate(-23deg);
+    z-index: -1;
+    position: absolute;
+    top: -70%;
+    right: -13%;
+}
 
 /* HEADER */
 .header {
@@ -212,19 +225,6 @@ a {
     padding-top: 7rem;
     padding-bottom: 2.5rem;
 }
-
-.blue-shape {
-    width: 120%;
-    height: 90%;
-    border-radius: 6.6vw;
-    background-color: #f2faff;
-    transform: rotate(-23deg);
-    z-index: -1;
-    position: absolute;
-    top: -67%;
-    right: 5%;
-}
-
 
 .pricing-head {
     display: flex;
