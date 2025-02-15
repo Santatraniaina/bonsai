@@ -32,6 +32,7 @@ body {
     font-size: 14px;
     color: var(--gray);
     position: relative;
+    overflow-x: hidden;
 }
 
 ul {
