@@ -465,13 +465,13 @@ input[name="monthly"]:checked ~ .toggle-ball {
     color: var(--green);
 }
 
-/* .workflow-description > .learn-more > img {
-    animation: all 1s ease-in;
+.learn-more > img {
+    transition: transform 0.3s;
 }   
 
-.workflow-description > .learn-more > img:hover {
-    transform: translateX(100px);
-} */
+.learn-more:hover > img {
+    transform: translateX(8px);
+}
 
 .workflow-price {
     width: 20%;
@@ -620,9 +620,49 @@ footer > div > h3 {
         padding: 1.25rem 2.5rem;
     }
 
-    .navbar > ul,
-    .login-signup {
+    .header-container:has(input:not(:checked)) .navbar {
         display: none;
+    }
+
+    .header-container:has(input:checked) .navbar {
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        height: 100vh;
+        padding: 0 2.5rem;
+        gap: 2rem;
+        inset: 50px 0 0 0;
+    }
+
+    .header-container:has(input:checked) .navbar > ul {
+        width: 95%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding-top: 4rem;
+    }
+
+    .header-container:has(input:checked) .navbar-list {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 100%;
+        border-bottom: 1px solid #c3c3c3;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-container:has(input:checked) .navbar > .login-signup {
+        min-width: 95%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .header-container:has(input:checked) .navbar > .login-signup > a {
+        min-width: 100%;
     }
 
     .hamburger-menu{
