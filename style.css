@@ -102,6 +102,84 @@ a {
     padding-left: 0.5rem;
 }
 
+/* ===============| PRODUCT DROPDOWN |================ */
+.product-dropdown {
+    /* display: none; */
+    position: absolute;
+    top: 70px;
+    left: 30%;
+    right: 10%;
+    width: 60%;
+    background-color: var(--white);
+    box-shadow: 0 0 60px 0 rgba(2, 4, 69, .05);
+    z-index: 1000;
+    border-radius: 10px;
+
+    display: flex;
+
+    /* LEFT */
+    .product-left {
+        width: 37%;
+    }
+
+    .product-left > .product{
+        padding: 2.5rem 2.5rem 0 2.5rem;
+
+        &:hover{
+            background-color: rgba(214, 221, 224, 0.13);
+        }
+
+        h2{
+            font-size: 1.5rem;
+            color: #292a2d;
+            line-height: 26px;
+        }
+        p{
+            font-size: 1rem;
+            border-bottom: 1px solid #c3c3c3;
+            font-size: 1.05rem;
+            line-height: 22px;
+            padding-bottom: 2.5rem;
+            margin-bottom: 0;
+        }
+    }
+
+
+    /* RIGHT */
+    .product-right {
+        width: 63%;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px 10px;
+
+        li{
+            padding: 0.5rem 1rem;
+        }
+
+        li:hover{
+            background-color: rgba(214, 221, 224, 0.13);
+            border-radius: 10px;
+        }
+        h4{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #4d4d4d;
+            font-size: 15px;
+            line-height: 18px;
+        }
+        p{
+            color: #6d6d6d;
+            font-size: 13px;
+            line-height: 13px;
+            font-weight: 400;
+        }
+    }
+}
+
+/* =================================================== */
+
 .login-signup {
     display: flex;
     gap: 1.25rem;
