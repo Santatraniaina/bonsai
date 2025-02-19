@@ -1,479 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
-    
-    <link rel="bonsai-favicon" href="/assets/img/favicon-32x32.jpg" type="image/x-icon">
-    <title>Bonsai</title>
-</head>
-<body>
-    <div class="blue-bg"></div>
-    <header class="header">
-        <div class="header-container">
-            <a href="#" aria-label="home">
-                <img src="/assets/img/bonsai-logo.svg" alt="Bonsai Logo" width="150px"/>
-            </a>
-            <nav class="navbar">
-                <ul>
-                    <li class="navbar-list dropdown products">
-                        Product
-                    </li>
-                    <li class="navbar-list dropdown templates">
-                        Templates
-                    </li>
-                    <li class="navbar-list">
-                        Pricing
-                    </li>
-                    <li class="navbar-list">
-                        Reviews
-                    </li>
-                </ul>
-                <div class="login-signup">
-                    <a href="#" class="button button-secondary">
-                        LOG IN
-                    </a>
-                    <a href="#" class="button button-primary">
-                        START FREE
-                    </a>
-                </div>
-            </nav>
-            <label for="menu-toggle" class="hamburger-menu">
-                <input type="checkbox" id="menu-toggle">
-            </label>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
 
-        <div class="product-dropdown">
-            <ul class="product-left">
-                <li class="product">
-                    <h2 class="amerigo">
-                        Bonsai Workflow
-                    </h2>
-                    <p>
-                        Look professional, win more clients and manage your business from one place
-                    </p>
-                </li>
-                <li class="product">
-                    <h2 class="amerigo">
-                        Bonsai Tax
-                    </h2>
-                    <p>
-                        Track expenses, maximize tax write-offs, and estimate taxes without the headache
-                    </p>
-                </li>
-                <li class="product">
-                    <h2 class="amerigo">
-                        Bonsai Cash
-                    </h2>
-                    <p>
-                        Bonsai's all-in-one financial hub: No fees and lighting fast payoffs
-                    </p>
-                </li>
-            </ul>
-            <ul class="product-right">
-                <li>
-                    <h4>Invoices</h4>
-                    <p>
-                        Get paid faster with automatic invoicing, online payments and more
-                    </p>
-                </li>
-                <li>
-                    <h4>Proposals</h4>
-                    <p>
-                        Create client-winning proposals with open receipts, custom packages and electronic approvals
-                    </p>
-                </li>
-                <li>
-                    <h4>Contracts</h4>
-                    <p>
-                        Protect your business with fully-customizable contract templates. Edit and e-sign hassle free.
-                    </p>
-                </li>
-                <li>
-                    <h4>Client CRM</h4>
-                    <p>
-                        Add leads, manage existing clients and track projects easily from one place
-                    </p>
-                </li>
-                <li>
-                    <h4>Forms & Automations</h4>
-                    <p>
-                        Boost client intake and automate feedback with custom web forms and questionnaires
-                    </p>
-                </li>
-                <li>
-                    <h4>Time Tracking</h4>
-                    <p>
-                        Stay organized with Bonsai’s all-in-one time tracker, automated timesheets and billing system
-                    </p>
-                </li>
-                <li>
-                    <h4>Accounting</h4>
-                    <p>
-                        Manage your finances easily with income reports, expense tracking, tax reminders and more
-                    </p>
-                </li>
-                <li>
-                    <h4>Task Tracking</h4>
-                    <p>
-                        Stress-free task management with project templates and integrated timesheets
-                    </p>
-                </li>
-            </ul>
-        </div>
+		<link rel="stylesheet" href="style.css" />
 
-        
-    </header>
+		<link
+			rel="bonsai-favicon"
+			href="/assets/img/favicon-32x32.jpg"
+			type="image/x-icon"
+		/>
+		<title>Bonsai</title>
+	</head>
+	<body>
+		<div class="blue-bg"></div>
+		<header class="header">
+			<div class="header-container">
+				<a href="#" aria-label="home">
+					<img
+						src="/assets/img/bonsai-logo.svg"
+						alt="Bonsai Logo"
+						width="150px"
+					/>
+				</a>
+				<nav class="navbar">
+					<ul>
+						<li class="navbar-list dropdown products">Product</li>
+						<li class="navbar-list dropdown templates">Templates</li>
+						<li class="navbar-list">Pricing</li>
+						<li class="navbar-list">Reviews</li>
+					</ul>
+					<div class="login-signup">
+						<a href="#" class="button button-secondary"> LOG IN </a>
+						<a href="#" class="button button-primary"> START FREE </a>
+					</div>
+				</nav>
+				<label for="menu-toggle" class="hamburger-menu">
+					<input type="checkbox" id="menu-toggle" />
+				</label>
+			</div>
 
-    <main class="main">
-         <div class="main-container">
-             <section class="pricing" aria-label="Pricing">
-                 <div class="pricing-head">
-                     <h1 class="amerigo">Plans & Pricing</h1>
-                     <div class="pricing-options">
-                         <span class="monthly">Monthly</span>
-                         <div class="toggle">
-                             <label for="monthly">
-                                 <input type="checkbox" id="monthly" name="monthly"/>
-                                 <div class="toggle-ball"></div>
-                             </label>
-                         </div>
-                         <span class="yearly">Yearly</span>
-                         <img src="/assets/img/FREE-text.svg" alt="2 Months FREE" class="months-free">
-                     </div>
-                 </div>
-                 <div class="pricing-container">
-                    <article class="pricing-item">
-                        <h2>Starter</h2>
-                        <p>Ideal for freelancers and contractors just starting out.</p>
-                        <div class="price">
-                            <span class="currency">$</span>
-                            <span class="amount">24</span>
-                            <span class="period">/Month</span>
-                        </div>
-                        <ul class="feature-list">
-                            <li class="feature">
-                                All Templates
-                            </li>
-                            <li class="feature">
-                                Unlimited Clients & Projects
-                            </li>
-                            <li class="feature">
-                                Invoicing & Payments
-                            </li>
-                            <li class="feature">
-                                Proposals & Contracts
-                            </li>
-                            <li class="feature">
-                                Tasks & Time Tracking
-                            </li>
-                            <li class="feature">
-                                Client CRM
-                            </li>
-                            <li class="feature">
-                                Expense Tracking
-                            </li>
-                            <li class="feature">
-                                Up to 5 Project Collaborators
-                            </li>
-                        </ul>
-                        <a href="#" class="button button-primary">
-                            START FREE
-                        </a>
-                    </article>
-                    <article class="pricing-item popular-tag" data-label="MOST POPULAR">
-                        <h2>Professional</h2>
-                        <p>Everything a growing independent business needs to thrive.</p>
-                        <div class="price">
-                            <span class="currency">$</span>
-                            <span class="amount">39</span>
-                            <span class="period">/Month</span>
-                        </div>
-                        <ul class="feature-list">
-                            <li class="feature">
-                                Everything in Starter plus...
-                            </li>
-                            <li class="feature">
-                                Custom Branding
-                            </li>
-                            <li class="feature">
-                                Forms & Questionnaires
-                            </li>
-                            <li class="feature">
-                                Workflow Automations
-                            </li>
-                            <li class="feature">
-                                Client Portal
-                            </li>
-                            <li class="feature">
-                                QuickBooks Integration
-                            </li>
-                            <li class="feature">
-                                Calendly Integration
-                            </li>
-                            <li class="feature">
-                                Zapier Integration
-                            </li>
-                            <li class="feature">
-                                Up to 15 Project Collaborators
-                            </li>
-                        </ul>
-                        <a href="#" class="button button-primary">
-                            START FREE
-                        </a>
-                    </article>
-                    <article class="pricing-item">
-                        <h2>Business</h2>
-                        <p>The perfect package for small businesses and agencies.</p>
-                        <div class="price">
-                            <span class="currency">$</span>
-                            <span class="amount">79</span>
-                            <span class="period">/Month</span>
-                        </div>
-                        <ul class="feature-list">
-                            <li class="feature">
-                                Everything in Starter and Professional plus...
-                            </li>
-                            <li class="feature">
-                                Subcontractor Management
-                            </li>
-                            <li class="feature">
-                                Hiring Agreement Templates (1099 contracts)
-                            </li>
-                            <li class="feature">
-                                Subcontractor Onboarding
-                            </li>
-                            <li class="feature">
-                                Talent Pool
-                            </li>
-                            <li class="feature">
-                                3 Team Seats (additional seats $9/month)
-                            </li>
-                            <li class="feature">
-                                Accountant Access
-                            </li>
-                            <li class="feature">
-                                Connect Multiple Bank Accounts
-                            </li>
-                            <li class="feature">
-                                Unlimited Subcontractors
-                            </li>
-                            <li class="feature">
-                                Unlimited Project Collaborators
-                            </li>
-                        </ul>
-                        <a href="#" class="button button-primary">
-                            START FREE
-                        </a>
-                    </article>
-                 </div>
-             </section>
-             <section class="workflow" aria-label="Workflow">
-                 <div class="workflow-head">
-                     <h2 class="amerigo">Super charge your work with add-ons</h2>
-                 </div>
-                 <div class="workflow-container">
-                     <div class="workflow-item">
-                         <div class="workflow-description">
-                             <h2>Collaborators</h2>
-                             <p>Invite other users to specific projects for limited access and functionality.</p>
-                         </div>
-                         <div class="workflow-price">
-                             <div class="free">Free</div>
-                         </div>
-                     </div>
-                     <div class="workflow-item">
-                         <div class="workflow-description">
-                             <h2>Partners</h2>
-                             <p>Invite other users for full account access and company management.</p>
-                         </div>
-                         <div class="workflow-price">
-                             <div class="amount">$9</div>
-                             <div class="period">/Month</div>
-                         </div>
-                     </div>
-                     <div class="workflow-item">
-                         <div class="workflow-description">
-                             <h2>Bonsai Tax</h2>
-                             <p>Track expenses, identify write-offs, and estimate quarterly taxes easily.</p>
-                             <a href="#" class="learn-more">
-                                 <span>Learn More</span>
-                                 <img src="/assets/img/learn-arrow.svg" alt="Learn More Arrow" width="6">
-                             </a>
-                         </div>
-                         <div class="workflow-price">
-                             <div class="amount">$10</div>
-                             <div class="period">/Month</div>
-                         </div>
-                     </div>
-                 </div>
-             </section>
-             <section class="cta" aria-label="cta">
-                 <p class="amerigo">
-                     It’s <span class="green">your</span> business.<br/>
-                     We’re here to help it grow.
-                 </p>
-                 <a href="#" class="button button-primary">
-                     START FREE
-                 </a>
-             </section>
-             <section class="faq" aria-label="FAQ">
-                 <h1 class="faq-header green">Frequently Asked Questions</h1>
-                 <ul class="faq-list">
-                     <li>
-                         <input type="checkbox" name="free-trial" id="free-trial"/>
-                         <label for="free-trial" class="accordion">How does the free trial work?</label>
-                         <p class="answer hidden">
-                             When you start your trial with Bonsai you'll receive full, unlimited access to all of Bonsai's Workflow or Workflow Plus Features! You will need to enter your credit card information to begin your trial, but don't worry - we won't charge you anything until the subscription ends! If you wish to cancel at any time during the trial period, you can do so through your Subscriptions Settings Page.
-                         </p>
-                     </li>
-                     <li>
-                         <input type="checkbox" name="plans" id="plans"/>
-                         <label for="plans" class="accordion">Can I change plans anytime?</label>
-                         <p class="answer">
-                             Yes, you can from within your account. If you have already subscribed to a plan, or want to downgrade or upgrade your current one, you can do this by going to your "Settings" and "Subscription".
-                         </p>
-                     </li>
-                     <li>
-                         <input type="checkbox" name="subscription" id="subscription"/>
-                         <label for="subscription" class="accordion">How do I pause my Bonsai subscription?</label>
-                         <p class="answer">
-                             We totally understand that with the nature of freelancing, work ebbs and flows so you might not always need your Bonsai subscription to remain active! The good news is that you can cancel or pause your monthly subscription at any time without penalty. Once cancelled, you'll be able to continue logging in to access all your documents and even continue to use our free features, like Time Tracking! In order to cancel your subscription, login to your Bonsai account.
-                         </p>
-                     </li>
-                     <li>
-                         <input type="checkbox" name="refund" id="refund"/>
-                         <label for="refund" class="accordion">What is your refund policy?</label>
-                         <p class="answer hidden">
-                             If you contact us within 2 weeks of being charged for your subscription, we will be happy to issue a refund for you!Beyond those 2 weeks, you will need to cancel or modify the subscription from the Subscriptions Tab in Settings to avoid future charges, but refunds will not be issued. This applies to both monthly and annual plans.
-                         </p>
-                     </li>
-                 </ul>
-             </section>
-         </div>
-    </main>
+			<div class="product-dropdown">
+				<div class="product-left">
+					<div class="product bonsai-workflow">
+						<h2 class="amerigo">Bonsai Workflow</h2>
+						<p>
+							Look professional, win more clients and manage your business from
+							one place
+						</p>
+					</div>
+					<a href="#" class="product">
+						<h2 class="amerigo">Bonsai Tax</h2>
+						<p>
+							Track expenses, maximize tax write-offs, and estimate taxes
+							without the headache
+						</p>
+					</a>
+					<a href="#" class="product">
+						<h2 class="amerigo">Bonsai Cash</h2>
+						<p>
+							Bonsai's all-in-one financial hub: No fees and lighting fast
+							payoffs
+						</p>
+					</a>
+				</div>
+				<div class="product-right">
+					<a href="#">
+						<img src="./assets/img/vector.svg" alt="Vector" loading="lazy" />
+						<div class="">
+							<h4>Invoices</h4>
+							<p>
+								Get paid faster with automatic invoicing, online payments and
+								more
+							</p>
+						</div>
+					</a>
+					<a href="#">
+						<img
+							src="./assets/img/proposals.svg"
+							alt="Proposals"
+							loading="lazy"
+						/>
+						<div class="">
+							<h4>Proposals</h4>
+							<p>
+								Create client-winning proposals with open receipts, custom
+								packages and electronic approvals
+							</p>
+						</div>
+					</a>
+					<a href="#">
+						<img
+							src="./assets/img/contracts.svg"
+							alt="Contracts"
+							loading="lazy"
+						/>
+						<div class="">
+							<h4>Contracts</h4>
+							<p>
+								Protect your business with fully-customizable contract
+								templates. Edit and e-sign hassle free.
+							</p>
+						</div>
+					</a>
+					<a href="#">
+						<img
+							src="./assets/img/people-outline.svg"
+							alt="People"
+							loading="lazy"
+						/>
+						<div class="">
+							<h4>Client CRM</h4>
+							<p>
+								Add leads, manage existing clients and track projects easily
+								from one place
+							</p>
+						</div>
+					</a>
+					<a href="#">
+						<img
+							src="./assets/img/reader-outline.svg"
+							alt="Reader"
+							loading="lazy"
+						/>
+						<div class="">
+							<h4>Forms & Automations</h4>
+							<p>
+								Boost client intake and automate feedback with custom web forms
+								and questionnaires
+							</p>
+						</div>
+					</a>
+					<a href="#">
+						<img
+							src="./assets/img/time-tracking.svg"
+							alt="Time Tracking"
+							loading="lazy"
+						/>
+						<div class="">
+							<h4>Time Tracking</h4>
+							<p>
+								Stay organized with Bonsai’s all-in-one time tracker, automated
+								timesheets and billing system
+							</p>
+						</div>
+					</a>
+					<a href="#">
+						<img
+							src="./assets/img/accounting.svg"
+							alt="Accounting"
+							loading="lazy"
+						/>
+						<div class="">
+							<h4>Accounting</h4>
+							<p>
+								Manage your finances easily with income reports, expense
+								tracking, tax reminders and more
+							</p>
+						</div>
+					</a>
+					<a href="#">
+						<img src="./assets/img/vector.svg" alt="Vector" loading="lazy" />
+						<div class="">
+							<h4>Task Tracking</h4>
+							<p>
+								Stress-free task management with project templates and
+								integrated timesheets
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</header>
 
-    <footer>
-        <div class="footer-container">
-            <div class="product">
-                <h3>Product</h3>
-                <ul class="footer-list">
-                    <li>Proposals</li>
-                    <li>Contracts</li>
-                    <li>Invoicing</li>
-                    <li>Client CRM</li>
-                    <li>Time Tracking</li>
-                    <li>Task Tracking</li>
-                    <li>Forms</li>
-                    <li>Accounting</li>
-                    <li>Bonsai Tax</li>
-                    <li>Bonsai Cash</li>
-                </ul>
-                <ul class="footer-list">
-                    <li>Pricing</li>
-                    <li>Bonsai Reviews</li>
-                </ul>
-            </div>
-            <div class="free-resources">
-                <h3>Free Resources</h3>
-                <ul class="footer-list">
-                    <li>Freelance Resources</li>
-                    <li>Freelance Blog by Bonsai</li>
-                    <li>How to Write a Contract</li>
-                    <li>Online Signature Maker</li>
-                </ul>
-                <ul class="footer-list">
-                    <li>Self-Employed Taxes Hub</li>
-                    <li>Self-Employed Tax Calculator</li>
-                    <li>Self-Employed Tax Deductions</li>
-                </ul>
-                <h4>Templates</h4>
-                <ul class="footer-list">
-                    <li>
-                        <span>Invoice Templates</span>
-                        <img
-                            src="/assets/img/path.svg"
-                            alt="Dropdown arrow"
-                            class="dropdown-arrow"
-                        />
-                    </li>
-                    <li>
-                        <span>Proposal Templates</span>
-                        <img
-                            src="/assets/img/path.svg"
-                            alt="Dropdown arrow"
-                            class="dropdown-arrow"
-                        />
-                    </li>
-                    <li>
-                        <span>Contract Templates</span>
-                        <img
-                            src="/assets/img/path.svg"
-                            alt="Dropdown arrow"
-                            class="dropdown-arrow"
-                        />
-                    </li>
-                    <li>
-                        <span>Agreement Templates</span>
-                        <img
-                            src="/assets/img/path.svg"
-                            alt="Dropdown arrow"
-                            class="dropdown-arrow"
-                        />
-                    </li>
-                    <li>
-                        <span>Scope of Work Templates</span>
-                        <img
-                            src="/assets/img/path.svg"
-                            alt="Dropdown arrow"
-                            class="dropdown-arrow"
-                        />
-                    </li>
-                    <li>
-                        <span>Quote Templates</span>
-                        <img
-                            src="/assets/img/path.svg"
-                            alt="Dropdown arrow"
-                            class="dropdown-arrow"
-                        />
-                    </li>
-                    <li>Credit Note Templates</li>
-                    <li>Estimate Templates</li>
-                    <li>Form Templates</li>
-                </ul>
-            </div>
-            <div class="bonsai">
-                <h3>Bonsai</h3>
-                <ul class="footer-list">
-                    <li>About</li>
-                    <li>Careers</li>
-                    <li>Support</li>
-                    <li>LinkedIn</li>
-                    <li>Twitter</li>
-                    <li>Privacy policy</li>
-                    <li>Legal</li>
-                </ul>
-                <ul class="footer-list">
-                    <li>Affiliates</li>
-                    <li>Write for Us</li>
-                </ul>
-                <ul class="footer-list">
-                    <li>
-                        <span>Comparisons</span>
-                        <img
-                            src="/assets/img/path.svg"
-                            alt="Dropdown arrow"
-                            class="dropdown-arrow"
-                        />
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-</body>
+		<main class="main">
+			<div class="main-container">
+				<section class="pricing" aria-label="Pricing">
+					<div class="pricing-head">
+						<h1 class="amerigo">Plans & Pricing</h1>
+						<div class="pricing-options">
+							<span class="monthly">Monthly</span>
+							<div class="toggle">
+								<label for="monthly">
+									<input type="checkbox" id="monthly" name="monthly" />
+									<div class="toggle-ball"></div>
+								</label>
+							</div>
+							<span class="yearly">Yearly</span>
+							<img
+								src="/assets/img/FREE-text.svg"
+								alt="2 Months FREE"
+								class="months-free"
+							/>
+						</div>
+					</div>
+					<div class="pricing-container">
+						<article class="pricing-item">
+							<h2>Starter</h2>
+							<p>Ideal for freelancers and contractors just starting out.</p>
+							<div class="price">
+								<span class="currency">$</span>
+								<span class="amount">24</span>
+								<span class="period">/Month</span>
+							</div>
+							<ul class="feature-list">
+								<li class="feature">All Templates</li>
+								<li class="feature">Unlimited Clients & Projects</li>
+								<li class="feature">Invoicing & Payments</li>
+								<li class="feature">Proposals & Contracts</li>
+								<li class="feature">Tasks & Time Tracking</li>
+								<li class="feature">Client CRM</li>
+								<li class="feature">Expense Tracking</li>
+								<li class="feature">Up to 5 Project Collaborators</li>
+							</ul>
+							<a href="#" class="button button-primary"> START FREE </a>
+						</article>
+						<article class="pricing-item popular-tag" data-label="MOST POPULAR">
+							<h2>Professional</h2>
+							<p>Everything a growing independent business needs to thrive.</p>
+							<div class="price">
+								<span class="currency">$</span>
+								<span class="amount">39</span>
+								<span class="period">/Month</span>
+							</div>
+							<ul class="feature-list">
+								<li class="feature">Everything in Starter plus...</li>
+								<li class="feature">Custom Branding</li>
+								<li class="feature">Forms & Questionnaires</li>
+								<li class="feature">Workflow Automations</li>
+								<li class="feature">Client Portal</li>
+								<li class="feature">QuickBooks Integration</li>
+								<li class="feature">Calendly Integration</li>
+								<li class="feature">Zapier Integration</li>
+								<li class="feature">Up to 15 Project Collaborators</li>
+							</ul>
+							<a href="#" class="button button-primary"> START FREE </a>
+						</article>
+						<article class="pricing-item">
+							<h2>Business</h2>
+							<p>The perfect package for small businesses and agencies.</p>
+							<div class="price">
+								<span class="currency">$</span>
+								<span class="amount">79</span>
+								<span class="period">/Month</span>
+							</div>
+							<ul class="feature-list">
+								<li class="feature">
+									Everything in Starter and Professional plus...
+								</li>
+								<li class="feature">Subcontractor Management</li>
+								<li class="feature">
+									Hiring Agreement Templates (1099 contracts)
+								</li>
+								<li class="feature">Subcontractor Onboarding</li>
+								<li class="feature">Talent Pool</li>
+								<li class="feature">
+									3 Team Seats (additional seats $9/month)
+								</li>
+								<li class="feature">Accountant Access</li>
+								<li class="feature">Connect Multiple Bank Accounts</li>
+								<li class="feature">Unlimited Subcontractors</li>
+								<li class="feature">Unlimited Project Collaborators</li>
+							</ul>
+							<a href="#" class="button button-primary"> START FREE </a>
+						</article>
+					</div>
+				</section>
+				<section class="workflow" aria-label="Workflow">
+					<div class="workflow-head">
+						<h2 class="amerigo">Super charge your work with add-ons</h2>
+					</div>
+					<div class="workflow-container">
+						<div class="workflow-item">
+							<div class="workflow-description">
+								<h2>Collaborators</h2>
+								<p>
+									Invite other users to specific projects for limited access and
+									functionality.
+								</p>
+							</div>
+							<div class="workflow-price">
+								<div class="free">Free</div>
+							</div>
+						</div>
+						<div class="workflow-item">
+							<div class="workflow-description">
+								<h2>Partners</h2>
+								<p>
+									Invite other users for full account access and company
+									management.
+								</p>
+							</div>
+							<div class="workflow-price">
+								<div class="amount">$9</div>
+								<div class="period">/Month</div>
+							</div>
+						</div>
+						<div class="workflow-item">
+							<div class="workflow-description">
+								<h2>Bonsai Tax</h2>
+								<p>
+									Track expenses, identify write-offs, and estimate quarterly
+									taxes easily.
+								</p>
+								<a href="#" class="learn-more">
+									<span>Learn More</span>
+									<img
+										src="/assets/img/learn-arrow.svg"
+										alt="Learn More Arrow"
+										width="6"
+									/>
+								</a>
+							</div>
+							<div class="workflow-price">
+								<div class="amount">$10</div>
+								<div class="period">/Month</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="cta" aria-label="cta">
+					<p class="amerigo">
+						It’s <span class="green">your</span> business.<br />
+						We’re here to help it grow.
+					</p>
+					<a href="#" class="button button-primary"> START FREE </a>
+				</section>
+				<section class="faq" aria-label="FAQ">
+					<h1 class="faq-header green">Frequently Asked Questions</h1>
+					<ul class="faq-list">
+						<li>
+							<input type="checkbox" name="free-trial" id="free-trial" />
+							<label for="free-trial" class="accordion"
+								>How does the free trial work?</label
+							>
+							<p class="answer hidden">
+								When you start your trial with Bonsai you'll receive full,
+								unlimited access to all of Bonsai's Workflow or Workflow Plus
+								Features! You will need to enter your credit card information to
+								begin your trial, but don't worry - we won't charge you anything
+								until the subscription ends! If you wish to cancel at any time
+								during the trial period, you can do so through your
+								Subscriptions Settings Page.
+							</p>
+						</li>
+						<li>
+							<input type="checkbox" name="plans" id="plans" />
+							<label for="plans" class="accordion"
+								>Can I change plans anytime?</label
+							>
+							<p class="answer">
+								Yes, you can from within your account. If you have already
+								subscribed to a plan, or want to downgrade or upgrade your
+								current one, you can do this by going to your "Settings" and
+								"Subscription".
+							</p>
+						</li>
+						<li>
+							<input type="checkbox" name="subscription" id="subscription" />
+							<label for="subscription" class="accordion"
+								>How do I pause my Bonsai subscription?</label
+							>
+							<p class="answer">
+								We totally understand that with the nature of freelancing, work
+								ebbs and flows so you might not always need your Bonsai
+								subscription to remain active! The good news is that you can
+								cancel or pause your monthly subscription at any time without
+								penalty. Once cancelled, you'll be able to continue logging in
+								to access all your documents and even continue to use our free
+								features, like Time Tracking! In order to cancel your
+								subscription, login to your Bonsai account.
+							</p>
+						</li>
+						<li>
+							<input type="checkbox" name="refund" id="refund" />
+							<label for="refund" class="accordion"
+								>What is your refund policy?</label
+							>
+							<p class="answer hidden">
+								If you contact us within 2 weeks of being charged for your
+								subscription, we will be happy to issue a refund for you!Beyond
+								those 2 weeks, you will need to cancel or modify the
+								subscription from the Subscriptions Tab in Settings to avoid
+								future charges, but refunds will not be issued. This applies to
+								both monthly and annual plans.
+							</p>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</main>
+
+		<footer>
+			<div class="footer-container">
+				<div class="product">
+					<h3>Product</h3>
+					<ul class="footer-list">
+						<li>Proposals</li>
+						<li>Contracts</li>
+						<li>Invoicing</li>
+						<li>Client CRM</li>
+						<li>Time Tracking</li>
+						<li>Task Tracking</li>
+						<li>Forms</li>
+						<li>Accounting</li>
+						<li>Bonsai Tax</li>
+						<li>Bonsai Cash</li>
+					</ul>
+					<ul class="footer-list">
+						<li>Pricing</li>
+						<li>Bonsai Reviews</li>
+					</ul>
+				</div>
+				<div class="free-resources">
+					<h3>Free Resources</h3>
+					<ul class="footer-list">
+						<li>Freelance Resources</li>
+						<li>Freelance Blog by Bonsai</li>
+						<li>How to Write a Contract</li>
+						<li>Online Signature Maker</li>
+					</ul>
+					<ul class="footer-list">
+						<li>Self-Employed Taxes Hub</li>
+						<li>Self-Employed Tax Calculator</li>
+						<li>Self-Employed Tax Deductions</li>
+					</ul>
+					<h4>Templates</h4>
+					<ul class="footer-list">
+						<li>
+							<span>Invoice Templates</span>
+							<img
+								src="/assets/img/path.svg"
+								alt="Dropdown arrow"
+								class="dropdown-arrow"
+							/>
+						</li>
+						<li>
+							<span>Proposal Templates</span>
+							<img
+								src="/assets/img/path.svg"
+								alt="Dropdown arrow"
+								class="dropdown-arrow"
+							/>
+						</li>
+						<li>
+							<span>Contract Templates</span>
+							<img
+								src="/assets/img/path.svg"
+								alt="Dropdown arrow"
+								class="dropdown-arrow"
+							/>
+						</li>
+						<li>
+							<span>Agreement Templates</span>
+							<img
+								src="/assets/img/path.svg"
+								alt="Dropdown arrow"
+								class="dropdown-arrow"
+							/>
+						</li>
+						<li>
+							<span>Scope of Work Templates</span>
+							<img
+								src="/assets/img/path.svg"
+								alt="Dropdown arrow"
+								class="dropdown-arrow"
+							/>
+						</li>
+						<li>
+							<span>Quote Templates</span>
+							<img
+								src="/assets/img/path.svg"
+								alt="Dropdown arrow"
+								class="dropdown-arrow"
+							/>
+						</li>
+						<li>Credit Note Templates</li>
+						<li>Estimate Templates</li>
+						<li>Form Templates</li>
+					</ul>
+				</div>
+				<div class="bonsai">
+					<h3>Bonsai</h3>
+					<ul class="footer-list">
+						<li>About</li>
+						<li>Careers</li>
+						<li>Support</li>
+						<li>LinkedIn</li>
+						<li>Twitter</li>
+						<li>Privacy policy</li>
+						<li>Legal</li>
+					</ul>
+					<ul class="footer-list">
+						<li>Affiliates</li>
+						<li>Write for Us</li>
+					</ul>
+					<ul class="footer-list">
+						<li>
+							<span>Comparisons</span>
+							<img
+								src="/assets/img/path.svg"
+								alt="Dropdown arrow"
+								class="dropdown-arrow"
+							/>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
