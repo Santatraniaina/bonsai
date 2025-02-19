@@ -6,20 +6,16 @@
 	--width: 1120px;
 }
 
-/* @font-face {
-    font-family: 'Proximanova opt';
-    src: url('http://web.archive.org/web/20221117021711im_/https://assets.website-files.com/58868bcd2ef4daaf0f072900/61e054f1b4d4be22816a4fbf_ProximaNova-Light-opt.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}*/
-
 @font-face {
 	font-family: "Amerigo-bt roman opt";
 	src: url("/assets/font/Amerigo\ BT\ Roman.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
+}
+
+html {
+	overflow-x: hidden;
 }
 
 body {
@@ -56,6 +52,7 @@ a {
 	position: absolute;
 	top: -70%;
 	right: -13%;
+	overflow-x: hidden;
 }
 
 /* HEADER */
@@ -87,7 +84,7 @@ a {
 .navbar > ul {
 	display: flex;
 	align-items: center;
-	gap: 3rem;
+	gap: 2rem;
 }
 
 .navbar-list {
